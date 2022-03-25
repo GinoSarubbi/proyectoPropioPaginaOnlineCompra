@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+main {
+  z-index: 800;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+/* From cssbuttons.io by @gagan-gv */
+/* From cssbuttons.io by @Sujitkavaiya */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin-block: -2rem;
+  gap: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 490px;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+  cursor: pointer;
+  margin-top: 120px;
+  transition: 0.3s ease;
+  height: 490px;
+}
+.card:hover {
+  box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.85);
+  transform: translateY(-10px);
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25em 0.75em;
+  border-radius: 1em;
+  font-size: 0.75rem;
+}
+
+.tag + .tag {
+  margin-left: 0.5em;
+}
+
+.tag-blue {
+  background: #56ccf2;
+  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #d1913c;
+  background: linear-gradient(to bottom, #ffd194, #d1913c);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+}
+
+/*VENTAS TOP */
+
+.contieneventastop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-top: 200px;
+}
+
+.VentasTop {
+  border-bottom: 3px solid black;
+  font-size: 25px;
+  margin-top: 60px;
+}
+.tituloventas {
+  color: black;
+  font-weight: 400;
+  font-size: 53px;
+}
+.subtitulo {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.cartasventastop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+/*binvenido parte superior del main*/
+.bienvenido {
+  margin-top: 110px;
+}
+
+/* From cssbuttons.io */
+.btn {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+/*vende tus cosas*/
+.vendetuscosascontenedor {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 250px;
+  padding-bottom: 70px;
+}
+.vendetuscosascontenedor h1 {
+  padding-bottom: 90px;
+}
+.contenido {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 90px;
+}
+.contenido1 i {
+  font-size: 40px;
+  color: #2f80ed;
+}
+.contenido2 i {
+  font-size: 40px;
+  color: #2dcba4;
+}
+.contenido3 i {
+  font-size: 40px;
+  color: #2f80ed;
+}
+.contenido4 i {
+  font-size: 40px;
+  color: #2dcba4;
+}
+
+.contenido2 {
+  width: 220px;
+}
+.contenido1 {
+  width: 220px;
+}
+.contenido3 {
+  width: 220px;
+}
+.contenido4 {
+  width: 220px;
+}
+
+.contenido1 h4 {
+  padding-bottom: 20px;
+}
+.contenido2 h4 {
+  padding-bottom: 20px;
+}
+.contenido3 h4 {
+  padding-bottom: 20px;
+}
+.contenido4 h4 {
+  padding-bottom: 20px;
+}
+
+.contenido1 p {
+  color: rgb(121, 121, 121);
+  font-family: "Lato", sans-serif;
+}
+.contenido2 p {
+  color: rgb(121, 121, 121);
+  font-family: "Lato", sans-serif;
+}
+.contenido3 p {
+  color: rgb(121, 121, 121);
+  font-family: "Lato", sans-serif;
+}
+.contenido4 p {
+  color: rgb(121, 121, 121);
+  font-family: "Lato", sans-serif;
+}
+
+/*VIDEO*/
+.video {
+  margin-top: 100px;
+  background-color: #2f80ed;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  transition: all 0.3s ease;
+}
+
+.video h1 {
+  padding-bottom: 40px;
+  font-weight: 400;
+
+  color: rgb(255, 255, 255);
+}
+.video h3 {
+  margin-top: -35px;
+  font-weight: 300;
+  padding-bottom: 40px;
+  color: white;
+  font-size: 19px;
+}
+
+/* CONTIENE VENTA DE ROPA URBANA*/
+.contieneventasderopa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.cartasropaurbana {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*TENDENCIAS*/
+.tendencias {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+}
+.contienetendenciadetalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+.contienetendenciadetalle .card {
+  width: 250px;
+  height: 350px;
+}
+.titulo h1 {
+  font-size: 45px;
+}
+.titulo {
+  border-bottom: 2px solid rgb(167, 167, 167);
+}
+
+/*FIGURAS*/
+.figuras {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 100px;
+  gap: 70px;
+  height: 200px;
+}
+
+.figuras .card {
+  width: 220px;
+  height: 250px;
+
+  margin-top: -180px;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 600px) {
+  .card {
+    width: 400px;
+  }
+
+  iframe {
+    width: 450px;
+    height: 300px;
+  }
+
+  .contienetendenciadetalle .card {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  card {
+    width: 300px;
+  }
+  iframe {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  card {
+    width: 200px;
+  }
+  iframe {
+    width: 300px;
+    height: 250px;
+  }
+}
